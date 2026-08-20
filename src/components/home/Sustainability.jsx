@@ -39,7 +39,7 @@ const Sustainability = () => {
               transition={{ delay: 0.2 }}
               className="text-base-content/60 text-lg mb-8 max-w-xl mx-auto lg:mx-0"
             >
-              Every second-hand purchase reduces manufacturing demand, saves energy, and keeps goods out of landfills. Join our community in making a positive environmental impact.
+              Give products a second life, reduce waste, and make a difference. Every purchase helps save resources and keep usable items out of landfills
             </motion.p>
 
             <motion.div 
@@ -72,7 +72,7 @@ const Sustainability = () => {
                   <FiTrash2 size={24} />
                 </div>
                 <div>
-                  <h4 className="text-base-content font-bold text-lg">1,200 kg</h4>
+                  <h4 className="text-base-content font-bold text-lg">1,900 kg</h4>
                   <p className="text-base-content/60 text-sm">Waste Prevented</p>
                 </div>
               </div>
