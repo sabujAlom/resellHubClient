@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 import { FiWind, FiDroplet, FiZap, FiTrash2 } from 'react-icons/fi';
 
 const metrics = [
-  { id: 1, label: 'Energy Saved', value: '75%', icon: FiZap, color: 'text-green-500' },
-  { id: 2, label: 'CO₂ Reduced', value: '60%', icon: FiWind, color: 'text-teal-500' },
-  { id: 3, label: 'Water Saved', value: '45%', icon: FiDroplet, color: 'text-blue-500' },
-  { id: 4, label: 'Waste Diverted', value: '80%', icon: FiTrash2, color: 'text-purple-500' },
+  { id: 1, label: 'Energy Saved', value: '80%', icon: FiZap, color: 'text-green-500' },
+  { id: 2, label: 'CO₂ Reduced', value: '65%', icon: FiWind, color: 'text-teal-500' },
+  { id: 3, label: 'Water Saved', value: '40%', icon: FiDroplet, color: 'text-blue-500' },
+  { id: 4, label: 'Waste Diverted', value: '85%', icon: FiTrash2, color: 'text-purple-500' },
 ];
 
 const Sustainability = () => {
