@@ -5,10 +5,10 @@ import { FiStar } from 'react-icons/fi';
 const stories = [
   {
     id: 1,
-    name: 'Sarah Mitchell',
+    name: 'Samira Rahman',
     role: 'Buyer',
-    initials: 'SM',
-    content: '"Found an amazing MacBook for half the price! The seller was incredibly responsive and shipping was super fast."',
+    initials: 'SR',
+    content: '"Scored an amazing MacBook at half the price! The seller was super responsive, and delivery was incredibly fast"',
     rating: 5,
   },
   {
