@@ -97,10 +97,10 @@ const HeroBanner = () => {
           >
             <div className="relative rounded-2xl bg-gray-800/50 border border-gray-700/50 p-2 backdrop-blur-sm shadow-2xl">
               <div className="grid grid-cols-2 gap-2 rounded-xl overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1511385348-a52b4a160dc2?q=80&w=600&auto=format&fit=crop" alt="Laptop" className="h-40 w-full object-cover" />
-                <img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?q=80&w=600&auto=format&fit=crop" alt="Chair" className="h-40 w-full object-cover" />
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop" alt="Shoes" className="h-40 w-full object-cover" />
-                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=600&auto=format&fit=crop" alt="Headphones" className="h-40 w-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1592890288564-76628a30a657" alt="mobile" className="h-40 w-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1653999284367-0a7f60c71b6d" alt="Chain" className="h-40 w-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="car" className="h-40 w-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" alt="Chair" className="h-40 w-full object-cover" />
               </div>
               
               {/* Floating Badges */}
