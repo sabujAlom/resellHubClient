@@ -55,7 +55,7 @@ const FeaturedProducts = () => {
         <div className="flex justify-between items-end mb-10">
           <div>
             <span className="bg-blue-500/10 text-blue-500 text-xs font-bold px-2.5 py-1 rounded-md uppercase tracking-wide">Featured</span>
-            <h2 className="text-3xl font-bold text-base-content mt-3">Hot Deals Right Now ...</h2>
+            <h2 className="text-3xl font-bold text-base-content mt-3">Top Products For You ...</h2>
           </div>
           <Link href="/products" className="text-sm text-base-content/60 hover:text-blue-500 transition-colors flex items-center gap-1">
             View All &rarr;
