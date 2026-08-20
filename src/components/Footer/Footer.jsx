@@ -3,92 +3,159 @@ import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin } from 'react-icons/fi';
 
 const Footer = () => {
   return (
-    <footer className="bg-base-200 pt-20 pb-10 border-t border-base-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
-          
-          {/* Brand Info */}
-          <div className="space-y-6">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded bg-blue-600 flex items-center justify-center text-white font-bold text-xl">
-                R
-              </div>
-              <span className="text-2xl font-bold text-base-content tracking-tight">
-                ReSell<span className="text-blue-500">Hub</span>
-              </span>
-            </Link>
-            <p className="text-base-content/60 text-sm leading-relaxed max-w-xs">
-              The premier marketplace for second-hand goods. Buy and sell sustainably, saving money while helping the environment.
+     <footer className="bg-base-200 border-t border-base-300">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* Top Footer */}
+    <div className="py-12 sm:py-14 lg:py-16">
+      <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8 xl:gap-12">
+        
+        {/* Brand */}
+        <div className="sm:col-span-2 lg:col-span-5">
+          <Link href="/" className="inline-flex items-center gap-2.5 mb-5">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold text-lg sm:text-xl shadow-sm">
+              R
+            </div>
+            <span className="text-xl sm:text-2xl font-bold text-base-content">
+              ReSell<span className="text-blue-500">Hub</span>
+            </span>
+          </Link>
+
+          <p className="text-sm sm:text-base text-base-content/60 leading-relaxed max-w-sm">
+            The premier marketplace for second-hand goods. Buy and sell
+            sustainably, save money, and give quality products a second life.
+          </p>
+
+          {/* Contact */}
+          <div className="mt-6 space-y-2.5 text-sm text-base-content/60">
+            <p className="flex items-start gap-3">
+              <span className="text-blue-500 mt-0.5">✉</span>
+              <span className="break-all">support@resellhub.com</span>
             </p>
-            <div className="space-y-2 text-sm text-base-content/60">
-              <p className="flex items-center gap-2">
-                <span className="text-blue-500">✉</span> support@resellhub.com
-              </p>
-              <p className="flex items-center gap-2">
-                <span className="text-blue-500">☏</span> +1 (555) 123-4567
-              </p>
-              <p className="flex items-center gap-2">
-                <span className="text-blue-500">⚲</span> San Francisco, CA 94102
-              </p>
-            </div>
-            {/* Social Links */}
-            <div className="flex items-center gap-4 pt-2">
-              {[FiFacebook, FiTwitter, FiInstagram, FiLinkedin].map((Icon, idx) => (
-                <a key={idx} href="#" className="w-10 h-10 rounded-full bg-base-300 flex items-center justify-center text-base-content/60 hover:bg-blue-600 hover:text-white transition-all duration-300">
-                  <Icon size={18} />
-                </a>
-              ))}
-            </div>
+            <p className="flex items-center gap-3">
+              <span className="text-blue-500">☏</span>
+              <span>+1 (555) 123-4567</span>
+            </p>
+            <p className="flex items-center gap-3">
+              <span className="text-blue-500">⚲</span>
+              <span>San Francisco, CA 94102</span>
+            </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-base-content font-semibold text-lg mb-6">Quick Links</h3>
-            <ul className="space-y-4 text-base-content/60">
-              <li><Link href="/" className="hover:text-blue-500 transition-colors text-sm">Home</Link></li>
-              <li><Link href="/products" className="hover:text-blue-500 transition-colors text-sm">Products</Link></li>
-              <li><Link href="/about" className="hover:text-blue-500 transition-colors text-sm">About Us</Link></li>
-              <li><Link href="/contact" className="hover:text-blue-500 transition-colors text-sm">Contact</Link></li>
-            </ul>
-          </div>
-
-          {/* Account */}
-          <div>
-            <h3 className="text-base-content font-semibold text-lg mb-6">Account</h3>
-            <ul className="space-y-4 text-base-content/60">
-              <li><Link href="/login" className="hover:text-blue-500 transition-colors text-sm">Sign In</Link></li>
-              <li><Link href="/register" className="hover:text-blue-500 transition-colors text-sm">Register</Link></li>
-              <li><Link href="/dashboard" className="hover:text-blue-500 transition-colors text-sm">Dashboard</Link></li>
-              <li><Link href="/dashboard/buyer/my-orders" className="hover:text-blue-500 transition-colors text-sm">My Orders</Link></li>
-            </ul>
-          </div>
-
-          {/* Categories */}
-          <div>
-            <h3 className="text-base-content font-semibold text-lg mb-6">Categories</h3>
-            <ul className="space-y-4 text-base-content/60">
-              <li><Link href="/products?category=electronics" className="hover:text-blue-500 transition-colors text-sm">Electronics</Link></li>
-              <li><Link href="/products?category=furniture" className="hover:text-blue-500 transition-colors text-sm">Furniture</Link></li>
-              <li><Link href="/products?category=vehicles" className="hover:text-blue-500 transition-colors text-sm">Vehicles</Link></li>
-              <li><Link href="/products?category=fashion" className="hover:text-blue-500 transition-colors text-sm">Fashion</Link></li>
-              <li><Link href="/products?category=mobile%20phones" className="hover:text-blue-500 transition-colors text-sm">Mobile Phones</Link></li>
-            </ul>
+          {/* Social */}
+          <div className="flex gap-2.5 mt-6">
+            {[FiFacebook, FiTwitter, FiInstagram, FiLinkedin].map((Icon, idx) => (
+              <a
+                key={idx}
+                href="#"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-base-300 flex items-center justify-center text-base-content/60 hover:bg-blue-600 hover:text-white hover:-translate-y-0.5 transition-all duration-300"
+              >
+                <Icon size={17} />
+              </a>
+            ))}
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-base-300 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-base-content/50 text-sm">
-            © {new Date().getFullYear()} ReSellHub. All rights reserved.
-          </p>
-          <div className="flex gap-6 text-sm text-base-content/50">
-            <Link href="/privacy" className="hover:text-base-content/80 transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-base-content/80 transition-colors">Terms of Service</Link>
-            <Link href="/cookies" className="hover:text-base-content/80 transition-colors">Cookie Policy</Link>
-          </div>
+        {/* Quick Links */}
+        <div className="lg:col-span-2">
+          <h3 className="font-semibold text-base-content mb-4 text-sm sm:text-base">
+            Quick Links
+          </h3>
+          <ul className="space-y-2.5">
+            {[
+              { href: "/", label: "Home" },
+              { href: "/products", label: "Products" },
+              { href: "/about", label: "About Us" },
+              { href: "/contact", label: "Contact" },
+            ].map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className="text-sm text-base-content/60 hover:text-blue-500 transition-colors"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Account */}
+        <div className="lg:col-span-2">
+          <h3 className="font-semibold text-base-content mb-4 text-sm sm:text-base">
+            Account
+          </h3>
+          <ul className="space-y-2.5">
+            {[
+              { href: "/login", label: "Sign In" },
+              { href: "/register", label: "Register" },
+              { href: "/dashboard", label: "Dashboard" },
+              { href: "/dashboard/buyer/my-orders", label: "My Orders" },
+            ].map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className="text-sm text-base-content/60 hover:text-blue-500 transition-colors"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Categories */}
+        <div className="lg:col-span-3">
+          <h3 className="font-semibold text-base-content mb-4 text-sm sm:text-base">
+            Categories
+          </h3>
+          <ul className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-1 gap-x-4 gap-y-2.5">
+            {[
+              { href: "/products?category=electronics", label: "Electronics" },
+              { href: "/products?category=furniture", label: "Furniture" },
+              { href: "/products?category=vehicles", label: "Vehicles" },
+              { href: "/products?category=fashion", label: "Fashion" },
+              { href: "/products?category=mobile%20phones", label: "Mobile Phones" },
+            ].map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className="text-sm text-base-content/60 hover:text-blue-500 transition-colors"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+
+    {/* Bottom */}
+    <div className="border-t border-base-300 py-5 sm:py-6">
+      <div className="flex flex-col-reverse sm:flex-row items-center justify-between gap-4">
+        <p className="text-xs sm:text-sm text-base-content/50 text-center sm:text-left">
+          © {new Date().getFullYear()} ReSellHub. All rights reserved.
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-x-5 gap-y-2">
+          {[
+            { href: "/privacy", label: "Privacy Policy" },
+            { href: "/terms", label: "Terms of Service" },
+            { href: "/cookies", label: "Cookie Policy" },
+          ].map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="text-xs sm:text-sm text-base-content/50 hover:text-blue-500 transition-colors"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
   );
 };
 
