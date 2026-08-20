@@ -24,7 +24,7 @@ const stories = [
     name: 'Priya Patel',
     role: 'Buyer',
     initials: 'PP',
-    content: '"I furnished my entire apartment from ReSellHub. Saved over $2,000 compared to buying new. Highly recommend!"',
+    content: '"ResellHub helped me furnish my entire apartment while saving more than $2,000. The quality and prices were incredible!"',
     rating: 5,
   },
   {
