@@ -528,3 +528,22 @@ Desktop
 
 ---
 
+# 🌱 Project Vision
+
+ReSell Hub aims to make second-hand trading **simple, secure, affordable, and environmentally responsible**.
+
+By keeping products in circulation for longer, ReSell Hub helps users save money while reducing unnecessary waste and supporting a more sustainable circular economy.
+
+---
+
+# 👨‍💻 Author
+
+**MD. SABUJ ALOM**
+
+ReSell Hub – A modern peer-to-peer second-hand marketplace platform.
+
+---
+
+## 📄 License
+
+This project is developed for educational and portfolio purposes.
