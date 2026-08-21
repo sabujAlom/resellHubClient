@@ -96,7 +96,7 @@ const Categories = () => {
                 key={cat.id}
               >
                 <Link
-                  href={`/category/${cat.name.toLowerCase().replace(/\s+/g, "-")}`}
+                  href={`/categories/${cat.name.toLowerCase()}`}
                   className="flex flex-col items-center justify-center p-6 h-full min-h-[160px] rounded-2xl bg-base-200 border border-base-300 hover:border-primary/40 hover:shadow-md transition-all group"
                 >
                   <div
