@@ -38,7 +38,7 @@ const CategoryProducts = ({ params: paramsPromise }) => {
         console.error("Error loading products by category", err);
         setLoading(false);
       });
-  }, [rawCategory]);
+  }, [queryCategory]);
 
   return (
     <div className="min-h-screen bg-base-100 py-12 px-6">
