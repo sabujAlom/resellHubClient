@@ -24,7 +24,7 @@ const stories = [
     name: 'Priya Patel',
     role: 'Buyer',
     initials: 'PP',
-    content: '"ResellHub helped me furnish my entire apartment while saving mores than $2,000. The quality and prices were incredible!"',
+    content: '"ResellHub helped me furnish my entire apartment while saving more than $2,000. The quality and prices were incredible!"',
     rating: 5,
   },
   {
@@ -32,7 +32,7 @@ const stories = [
     name: 'Marcus Johnson',
     role: 'Seller',
     initials: 'MJ',
-    content: '"The analytics dashboard helped me price my items perfectly. Revenue tripled in 3 months!"',
+    content: '"The analytics dashboard helped me price my item perfectly. Revenue tripled in 3 months!"',
     rating: 5,
   },
 ];
