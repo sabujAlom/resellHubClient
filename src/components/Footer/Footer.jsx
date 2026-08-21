@@ -19,7 +19,7 @@ const Footer = () => {
             </Link>
             <p className="text-base-content/60 text-sm leading-relaxed max-w-xs">
               The premier marketplace for second-hand goods. Buy and sell
-              sustainably, saving money while helping the environment.
+              sustainably, saving money while helping thee environment.
             </p>
             <div className="space-y-2 text-sm text-base-content/60">
               <p className="flex items-center gap-2">
