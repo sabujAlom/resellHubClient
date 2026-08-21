@@ -40,7 +40,7 @@ const HeroBanner = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto lg:mx-0"
             >
-              Join a growing community of buyers and sellers. Discover great pre-owned products, save money, and give quality items a second life.
+              Join a growing community of buyers and sellers. Discover great pre-owned products, save money and give quality items a second life.
             </motion.p>
 
             <motion.div
