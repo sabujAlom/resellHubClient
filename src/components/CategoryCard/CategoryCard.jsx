@@ -5,7 +5,7 @@ const CategoryCard = ({ category }) => {
 
   return (
     <Link
-      href={`/category/${category.name.toLowerCase().replace(/\s+/g, "-")}`}
+      href="/category/test"
       className={`flex flex-col items-center justify-center p-6 h-full min-h-[160px] rounded-2xl border transition-all duration-300 group ${category.color}`}
     >
       <Icon className="w-10 h-10 mb-4 group-hover:scale-110 transition-transform duration-300 shrink-0" />

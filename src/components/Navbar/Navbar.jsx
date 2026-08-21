@@ -72,23 +72,20 @@ const Navbar = () => {
           Products
         </Link>
       </li>
-      <li>
-        <Link
-          href="/#categories"
-          className="font-semibold text-base-content/80 hover:text-base-content"
-          onClick={(e) => {
-            if (pathname === "/") {
-              e.preventDefault();
-              document
-                .getElementById("categories")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }
-            setIsOpen(false);
-          }}
-        >
-          Categories
-        </Link>
-      </li>
+        <li>
+          <Link
+            href="/categories"
+            className={`font-semibold ${
+              isLinkActive("/categories")
+                ? "text-blue-500"
+                : "text-base-content/80 hover:text-base-content"
+            }`}
+            onClick={() => setIsOpen(false)}
+          >
+            Categories
+          </Link>
+        </li>
+      
       <li>
         <Link
           href="/about"
