@@ -5,9 +5,9 @@ ReSell Hub is a modern, responsive, and secure online web application that allow
 ---
 
 ## 🔗 Project Links
-- **Live URL**: [ReSell Hub Live](https://resell-hub-client-liard.vercel.app)
-- **Client Code Repository**: [GitHub Client Repo](https://github.com/mdsadrulhasandider/resell-hub-client)
-- **Server Code Repository**: [GitHub Server Repo](https://github.com/mdsadrulhasandider/resell-hub-server)
+- **Live URL**: [ReSell Hub Live](https://resell-hub-client-three.vercel.app)
+- **Client Code Repository**: [GitHub Client Repo](https://github.com/sabujAlom/resellHubClient)
+- **Server Code Repository**: [GitHub Server Repo](https://github.com/sabujAlom/resellHubServer)
 
 ---
 
@@ -66,6 +66,6 @@ To test the role-based dashboards, please use the following credentials or sign 
 
 Create a `.env.local` file in the root of the client folder:
 ```env
-NEXT_PUBLIC_API_URL=http://localhost:5000/api
+NEXT_PUBLIC_API_URL=http://localhost:5000
 NEXT_PUBLIC_BETTER_AUTH_URL=http://localhost:5000
 ```
