@@ -93,7 +93,7 @@ const AllProducts = () => {
           <h1 className="text-3xl md:text-4xl font-extrabold text-blue-500">
             Marketplace <span className="text-base-content">Deals</span>
           </h1>
-          <p className="text-slate-400 text-sm">Find, compare and grab certified pre-owned items locally.</p>
+          <p className="text-slate-400 text-sm">Discover, compare, and buy quality pre-owned items near you</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 bg-base-200 border border-base-300 p-6 rounded-3xl shadow-lg">
