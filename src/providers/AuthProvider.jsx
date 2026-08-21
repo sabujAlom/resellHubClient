@@ -25,7 +25,7 @@ const AuthProvider = ({ children }) => {
     setUser(currentUser);
 
     axios.post(
-      `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api'}/jwt`,
+      `${process.env.NEXT_PUBLIC_API_URL}/api/jwt`,
       {},
       {
         withCredentials: true
