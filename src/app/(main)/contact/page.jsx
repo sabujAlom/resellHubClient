@@ -18,7 +18,7 @@ const Contact = () => {
       <div className="max-w-xl mx-auto space-y-8 bg-base-100 border border-base-300 p-8 rounded-3xl shadow-xl">
         <div className="space-y-2 text-center">
           <h1 className="text-3xl font-extrabold text-base-content">Contact Us</h1>
-          <p className="text-base-content/60 text-sm">Have queries or suggestions? Drop us a line below.</p>
+          <p className="text-base-content/60 text-sm">Need help or have a suggestion? Let us know below.</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
