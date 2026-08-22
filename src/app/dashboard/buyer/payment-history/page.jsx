@@ -11,7 +11,7 @@ const PaymentHistory = () => {
 
   useEffect(() => {
     if (user) {
-      axiosSecure.get(`/payments?buyerId=${user.id || user._id}`)
+      axiosSecure.get(`/api/payments?buyerId=${user.id || user._id}`)
         .then(res => {
           setPayments(res.data);
           setLoading(false);
