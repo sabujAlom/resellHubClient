@@ -33,7 +33,7 @@ const PaymentHistory = () => {
 
   return (
     <div className="space-y-6 text-base-content">
-      <h1 className="text-3xl font-extrabold">Payment </h1>
+      <h1 className="text-3xl font-extrabold">Payment History</h1>
 
       {payments.length === 0 ? (
         <div className="p-8 bg-base-200 border border-base-300 rounded-3xl text-center text-slate-400">
