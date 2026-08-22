@@ -44,7 +44,7 @@ const AllProducts = () => {
     queryParams.set('limit', '6');
 
     const apiBase = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
-    axios.get(`${apiBase}/products?${queryParams.toString()}`)
+    axios.get(`${apiBase}/api/products?${queryParams.toString()}`)
       .then(res => {
         if (res.data?.success) {
           setProducts(res.data.products);

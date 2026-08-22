@@ -26,7 +26,7 @@ const ProductDetails = () => {
 
   useEffect(() => {
     const apiBase = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
-    axios.get(`${apiBase}/products/${id}`)
+    axios.get(`${apiBase}/api/products/${id}`)
       .then(res => {
         setProduct(res.data);
         setLoading(false);
@@ -36,7 +36,7 @@ const ProductDetails = () => {
         setLoading(false);
       });
 
-    axios.get(`${apiBase}/reviews?productId=${id}`)
+    axios.get(`${apiBase}/api/reviews?productId=${id}`)
       .then(res => {
         setReviews(res.data);
       })
@@ -51,7 +51,7 @@ const ProductDetails = () => {
     }
 
     try {
-      const orderRes = await axiosSecure.post('/orders', {
+      const orderRes = await axiosSecure.post('/api/orders', {
         buyerId: user.id || user._id,
         sellerId: product.sellerId,
         productId: product._id,
@@ -64,7 +64,7 @@ const ProductDetails = () => {
       if (orderRes.data?.success) {
         const order = orderRes.data.order;
         toast.loading("Redirecting to Stripe Checkout...", { id: "checkout-redirect" });
-        const sessionRes = await axiosSecure.post('/payments/create-checkout-session', {
+        const sessionRes = await axiosSecure.post('/api/payments/create-checkout-session', {
           productId: product._id,
           buyerId: user.id || user._id,
           orderId: order._id
@@ -112,7 +112,7 @@ const ProductDetails = () => {
     }
 
     try {
-      const res = await axiosSecure.post('/reviews', {
+      const res = await axiosSecure.post('/api/reviews', {
         reviewerId: user.id || user._id,
         reviewerName: user.name,
         reviewerPhoto: user.image || '',

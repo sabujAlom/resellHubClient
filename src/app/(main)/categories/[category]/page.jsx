@@ -40,7 +40,7 @@ const CategoryProducts = ({ params: paramsPromise }) => {
           "http://localhost:5000/api";
 
         const res = await axios.get(
-          `${apiBase}/products?category=${encodeURIComponent(
+          `${apiBase}/api/products?category=${encodeURIComponent(
             queryCategory
           )}`
         );
